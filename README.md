@@ -45,8 +45,9 @@ The **goal** of phase one is to build and administer a Windows Active Directory 
                      │
          -----------------------
          │                     │
-   Windows Server         Windows 11 Client
-      192.168.10.10        DHCP
+     Windows Server     Windows 11 Client
+     192.168.10.10            DHCP
+
 
 In the future will add 
 
@@ -61,7 +62,7 @@ In the future will add
 Windows Server 2022
 
 ```bash
-Hostname
+# Hostname
 SRV-DC01
 
 # IP
@@ -76,3 +77,5 @@ SRV-DC01
 # DNS
 192.168.10.10
 ```
+
+When a DNS record or a computer's DNS setting points to "itself" (e.g., 127.0.0.1 or localhost), it acts as its own DNS resolver to quickly translate domain names to IP addresses without relying on external servers.
